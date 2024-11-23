@@ -37,7 +37,7 @@ pipeline {
                 sh """
                     ls -la
                     zip -r catalogue.zip ./* -x ".git" -x "*.zip"
-                    ls
+                    ls -ltr
                 """
             }
         }
